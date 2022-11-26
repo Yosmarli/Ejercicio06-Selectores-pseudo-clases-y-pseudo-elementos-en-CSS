@@ -1,0 +1,23 @@
+.boton {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #008000;
+  color: white;
+ 
+}
+
+.boton span::after {
+  content: " ¡HECHO!";
+  position: relative;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.boton:hover span::after {
+  opacity: 1;
+}
